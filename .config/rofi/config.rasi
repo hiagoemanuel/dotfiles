@@ -1,0 +1,67 @@
+configuration {
+  modes: [ combi ];
+  combi-modes: [ window, drun, run];
+  font: "JetBrainsMono 12";
+}
+
+* {
+  secondary-color: #1D1D1D;
+  primary-color: #BDB5A8;
+  tertiary-color: #6B5A41;
+  text-color: @primary-color;
+  border-color: @primary-color;
+  background-color: @secondary-color;
+}
+
+inputbar, entry, prompt, num-rows, num-filtered-rows, {
+  text-color: @primary-color;
+  placeholder-color: @primary-color;
+  background-color: @secondary-color;
+}
+
+scrollbar {
+  handle-color: @primary-color;
+}
+
+window {
+  width: 30%;
+  border: 2px;
+  padding: 8px;
+  border-radius: 4px;
+  border-color: @primary-color;
+  background-color: @secondary-color;
+}
+
+entry {
+  placeholder: "Type here";
+  cursor: pointer;
+}
+
+listview {
+  lines: 7;
+  margin: 8px 0 0 0;
+  padding: 8px 0 0 0;
+  border: 2px 0 0 0;
+  border-color: @primary-color;
+}
+
+element.selected.normal {
+  background-color: @tertiary-color;
+  text-color: @primary-color;
+  border-radius: 4px;
+}
+
+element.normal.normal, element.alternate.normal {
+  background-color: @secondary-color;
+  text-color: @primary-color;
+}
+
+element {
+  children: [element-icon, element-text];
+  spacing: 8px;
+  padding: 8px;
+}
+
+element-icon {
+  size: 28px;
+}
