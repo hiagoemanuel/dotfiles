@@ -1,0 +1,7 @@
+  keymap:
+    - name: Arrows -> HJKL
+      remap:
+        alt_r-h: left
+        alt_r-j: down
+        alt_r-k: up
+        alt_r-l: right
